@@ -1,0 +1,20 @@
+<ion-view view-title="Oral Urgency">
+  <ion-content>
+    <div class="listed">
+    <div ng-repeat="protest in protests" class="list card protest-{{ protest.id }}" ng-class="protest.fields.isVisible == true ? 'card-active' : ''" ng-click="cardClick(protest.id)">
+      <div class="item item-divider">{{ protest.fields.titulo }}</div>
+      <div class="item item-body">
+        <div class="text-content" ng-show="protest.fields.isVisible == true">
+          <ul>
+            <li ng-bind-html="protest.fields.conteudo">
+            </li>
+          </ul>
+        </div>
+        <div class="text-excerpt" ng-show="protest.fields.isVisible == false" ng-bind-html="protest.fields.resumo">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>

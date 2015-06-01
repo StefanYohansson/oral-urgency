@@ -1,0 +1,76 @@
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+  background-color: #052237;
+  background: linear-gradient(0deg, #052237, #052237 50%, #052237 50%);
+}
+
+[nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+  background-color: #052237;
+  background: linear-gradient(0deg, #052237, #052237 50%, #052237 50%);
+}
+
+.bar.bar-stable .title {
+    color: #FFF;
+    font-family: RobotoDraft,Roboto,"Helvetica Neue","Segoe UI",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.listed {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 310px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+.card:first-child {
+  margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    display: block;
+    padding: 0px;
+    position: relative;
+    margin: 8px 8px 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+#map {
+    width: 100%;
+    min-height: 310px;
+    height: 30%;
+}
+
+.text-content {
+}
+
+.ng-hide {
+    display:none!important;
+}
+
+.fade-in.ng-hide-add-active { -webkit-animation:fadeOut 1s; animation:fadeOut 1s; display:block!important;}
+
+
+.card-active {
+  background-color: #052237;
+  width: 102%;
+  margin-left: -1%;
+  padding-left: 20px;
+  -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.card-active .item {
+  color: #FFF !important;
+}
